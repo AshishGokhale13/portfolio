@@ -1,0 +1,115 @@
+.projects
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+    overflow: auto;
+    background-color: rgba(214, 51, 51, 0);
+    position: absolute;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.projects::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+.projects-container
+{
+    padding: 0.5em;
+    width: 100%;
+    position: relative;
+}
+
+.projects-row
+{
+    padding:0.5em;
+    width: auto;
+    display: flex;
+    gap:1em;
+    flex-wrap: wrap;
+    
+}
+
+.project-col
+{
+    flex: 0 3 48.29%;
+    padding: 0.3em;  
+    box-sizing: border-box;
+    max-width: 48.29%;
+
+}
+
+.project-detail
+{
+    padding: 0.2em;
+    box-sizing: border-box;
+    height: 220px;
+    perspective: 600px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+
+  }
+  
+  .is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+    
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    backface-visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+  
+  .card__face--front {
+    background: red;
+  }
+  
+  .card__face--back {
+    background: blue;
+    transform: rotateY(180deg);
+  }
+
+  .card__face img
+  {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+  .project-technology ul
+  {
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+  }
+
+.project-title{
+font-size:22px;
+
+}
+  .project-technology ul li
+  {
+    font-size: 12px;
+    list-style: none;
+  }
+  .project-technology ul li::before
+  {
+    content: '#';
+  }

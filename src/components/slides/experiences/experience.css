@@ -1,0 +1,79 @@
+.experience
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+  
+}
+
+.company
+{
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0em 3em;
+
+}
+
+.role
+{
+    flex: 4;
+    line-height: 25px;
+    padding: 0 1em;
+}
+
+.role>h3
+{
+    font-size: 34px;
+    color: var(--sidebar-bg);
+}
+.role>h4
+{
+    color: rgb(36, 35, 35);
+}
+
+.role h2
+{
+    color: var(--sidebar-bg);
+    font-size: 18px;
+    margin-top: 1em;
+    letter-spacing: 1.5px;
+    font-family: Bree Serif;
+}
+
+
+.role>img
+{
+    height:120px;
+    margin: 0;
+    padding: 0;
+}
+
+p
+{
+ 
+}
+p>ul
+{
+    margin: 1em 0em;
+}
+p>ul>li
+{
+    color: rgb(53, 52, 52);
+    line-height: 15px;
+    margin-top: 0.5em;
+
+}
+
+p>ul>li::before
+{
+    content: ' s';
+    list-style: disc;
+}
+

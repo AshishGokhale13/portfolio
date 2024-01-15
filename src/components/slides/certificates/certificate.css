@@ -1,0 +1,172 @@
+.Certificates{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+}
+
+.certificates-container
+{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.Certificate-row
+{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    gap:2em;
+}
+
+.certificates-item
+{
+    width: 300px;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: rgba(54, 51, 51, 0.19) 0px 10px 20px, rgba(223, 223, 223, 0.23) 0px 6px 6px;
+    padding: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+.preview
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 14, 14, 0.726);
+    border-radius: 14px;
+    box-shadow: rgba(54, 51, 51, 0.19) 0px 10px 20px, rgba(223, 223, 223, 0.23) 0px 6px 6px;
+    padding: 6px;
+    position: absolute;
+    display: flex;
+    transition: 1.2s;
+    box-sizing: border-box;
+}
+.certificate-img>img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 14px;
+}
+.certificate-img
+{
+    height: 230px;
+    overflow: hidden;
+    transition: 1s;
+}
+.certificate-img>img:hover
+{
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.Certificate-row::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* .Certificate-row::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3); 
+    border-radius: 10px;
+}
+
+.Certificate-row::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(53, 51, 192, 0.5); 
+} */
+.cancel-window
+{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
+.cancel-window:hover
+{
+    font-size: 35px;
+    position: absolute;
+    right: 30px;
+}
+
+
+.preview-container
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.preview-window
+{
+    height: 80%;
+    width: 80%;
+   
+}
+.preview-window img
+{
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+   
+}
+
+.preview-controller
+{
+    display: flex;
+    gap:2em;
+    justify-content:center;
+    width: 90%;
+}
+.preview-controller>.next
+{
+    right: 2em;
+}
+.preview-controller>.prev
+{
+    left: 2em;
+}
+
+.preview-controller>.prev,.preview-controller>.next
+{
+    font-weight: 900;
+    font-size: 35px;
+    transform: translateY(-7.5em);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    position: absolute;
+}
+
+.preview-controller>.prev:hover,.preview-controller>.next:hover
+{
+    transition: 0.3s;
+    transform: translateY(-7.5em) scale(1.3);
+    background-color: rgba(90, 90, 92, 0.753);
+    padding:5px;
+    box-sizing: border-box;
+    border-radius: 20em;
+    box-shadow: rgba(189, 189, 189, 0.19) 0px 0px 20px, rgba(253, 253, 253, 0.23) 0px 0px 6px;
+}
+
+.navigations
+{
+    display: flex;
+    gap:10px;
+    color: white;
+    transition: 1s;
+    margin-top: 10px;
+}
+

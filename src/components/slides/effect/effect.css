@@ -1,0 +1,312 @@
+.effect
+{
+    z-index: 0;
+    position: absolute;
+    border-radius: 14px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.shapes
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.left-corner-circle
+{
+    height: 150px;
+    width: 150px;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    border-radius: 50%;
+    position: absolute;
+    transform: translate3d(-40px,-40px,10px);
+    animation: rotate 4s linear infinite;
+}
+
+.right-corner-bottom-circle
+{
+    height: 200px;
+    width: 200px;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate3d(-50px,-40px,10px);
+    animation: rotate-bottom 14s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+       transform:  translate3d(-40px,-40px,10px) rotate(0deg);
+    }
+    50%{
+        transform:  translate3d(-30px,-25px,10px) rotate(360deg);
+    }
+    100%{
+        transform:  translate3d(-40px,-40px,10px) rotate(0deg);
+    }
+}
+
+@keyframes rotate-bottom {
+    0%{
+       transform:  translate3d(40px,40px,10px) rotate(0deg);
+    }
+    50%{
+        transform:  translate3d(30px,25px,10px) rotate(360deg);
+    }
+    100%{
+        transform:  translate3d(40px,40px,10px) rotate(0deg);
+    }
+}
+
+
+@keyframes rotate-reverse {
+    0%{
+       transform:  translate3d(40px,40px,10px) rotate(0deg);
+    }
+    50%{
+        transform:  translate3d(-130px,-125px,10px) rotate(180deg);
+    }
+    100%{
+        transform:  translate3d(40px,40px,10px) rotate(360deg);
+    }
+}
+
+@keyframes rotate-forword {
+    0%{
+       transform:  translate3d(40px,40px,10px) rotate(0deg);
+    }
+    50%{
+        transform:  translate3d(130px,125px,10px) rotate(180deg);
+    }
+    100%{
+        transform:  translate3d(40px,40px,10px) rotate(360deg);
+    }
+}
+
+.bubles
+{
+    height: 100%;
+    width: 100%;
+}
+.bubles1
+{
+   
+}
+
+.bubles1>.buble
+{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+    left:20px;
+    bottom: 0;
+    border-radius: 50%;
+    animation: disolve 4s ease-in-out infinite;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+    visibility:hidden;
+}
+
+.bubles>.buble
+{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+    left:20px;
+    bottom: -30px;
+    border-radius: 50%;
+    animation: disolve 6s ease-in-out infinite;
+    background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+
+}
+
+@keyframes disolve
+{
+    0%{
+        transform: translateY(0px)}
+       10%{visibility:visible;} 
+    50%{height: 40px;
+    width: 40px;}
+    100%{transform: translateY(-500px);opacity: 0;}
+}
+
+.SkillsEffect
+{
+    top:0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--sidebar-bg);
+    position: relative;
+}
+
+
+.square
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(4, 92, 165);
+    animation: rotate-forword 14s linear infinite;
+}
+
+.sq-reverse
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(74, 4, 165);
+    animation: rotate-reverse 14s linear infinite alternate-reverse;
+}
+
+
+.certificatesEffect
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(to right, #141e30, #243b55); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #141e30, #243b55); 
+}
+.emogis
+{
+    position: relative;
+}
+
+.emoji-Item
+{
+    position: absolute;
+}
+.emoji
+{
+    color:#455b74;
+}
+
+@keyframes toggleOne {
+    0%{
+        transform: translate(3em,5em) scale(1) rotate(20deg);
+    }
+    50%{
+        transform: translate(3em,5em) scale(1.2) rotate(40deg);
+    }
+    100%{
+        transform: translate(3em,5em) scale(1) rotate(20deg);
+    }
+}
+
+.one{
+    transform: translate(3em,5em) rotate(20deg);
+    animation: toggleOne 14s linear infinite alternate-reverse;
+
+}
+
+.two{
+    transform: translate(24em,15em) rotate(-10deg);
+    animation: toggleTwo 14s linear infinite alternate-reverse;
+}
+
+.three{
+    transform: translate(55em,8em) rotate(30deg);
+    animation: toggleThree 14s linear infinite alternate-reverse;
+}
+
+.four{
+    transform: translate(35em,2em) rotate(-30deg);
+    animation: toggleFour 14s linear infinite alternate-reverse;
+}
+
+.five{
+    transform: translate(35em,30em) rotate(-20deg);
+    animation: toggleFive 14s linear infinite alternate-reverse;
+}
+
+.six{
+    transform: translate(55em,30em) rotate(-10deg);
+    animation: toggleSix 14s linear infinite alternate-reverse;
+}
+.seven{
+    transform: translate(5em,30em) rotate(30deg);
+    animation: toggleSeven 14s linear infinite alternate-reverse;
+}
+
+@keyframes toggleTwo {
+    0%{
+        transform: translate(24em,15em) scale(1)  rotate(50deg);
+    }
+    50%{
+        transform:translate(24em,15em) scale(1.2)  rotate(50deg);
+    }
+    100%{
+        transform: translate(24em,15em) scale(1) rotate(50deg);
+    }
+}
+@keyframes toggleThree {
+    0%{
+        transform: translate(55em,8em) scale(1) rotate(-10deg);
+    }
+    50%{
+        transform: translate(55em,8em) scale(1.2) rotate(-10deg);
+    }
+    100%{
+        transform: translate(55em,8em) scale(1) rotate(-10deg);
+    }
+}
+@keyframes toggleFour {
+    0%{
+        transform: translate(3em,5em) scale(1) rotate(30deg);
+    }
+    50%{
+        transform: translate(3em,5em) scale(1.2) rotate(30deg);
+    }
+    100%{
+        transform: translate(3em,5em) scale(1) rotate(30deg);
+    }
+}
+@keyframes toggleFive {
+    0%{
+        transform: translate(35em,30em) scale(1) rotate(-20deg);
+    }
+    50%{
+        transform: translate(35em,30em) scale(1.2) rotate(-20deg);
+    }
+    100%{
+        transform: translate(35em,30em) scale(1) rotate(-20deg);;
+    }
+}
+@keyframes toggleSix {
+    0%{
+        transform: translate(55em,30em) scale(1) rotate(40deg);
+    }
+    50%{
+        transform: translate(55em,30em) scale(1.2) rotate(40deg);
+    }
+    100%{
+        transform: translate(55em,30em) scale(1) rotate(40deg);
+    }
+}
+@keyframes toggleSeven {
+    0%{
+        transform: translate(5em,30em) scale(1);
+    }
+    50%{
+        transform:  translate(5em,30em)scale(1.2);
+    }
+    100%{
+        transform: translate(5em,30em) scale(1);
+    }
+}
+
+/* Project Effects */
+
+.projectEffect
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
