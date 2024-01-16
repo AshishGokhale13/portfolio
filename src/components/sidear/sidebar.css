@@ -134,7 +134,7 @@
     z-index: 10000;
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 40%;
     
 }
 
@@ -165,7 +165,7 @@
 @keyframes slideright
 {
     from{
-        right: -100px;
+        right: -110px;
     }
     to{
         right: 0;
@@ -178,6 +178,6 @@
         right: 0px;
     }
     to{
-        right: -100;
+        right: -110;
     }
 }
