@@ -12,6 +12,7 @@ function Sidebar() {
 
     const [menuToggle,setMenuToggle]=useState(true);
 
+
     useEffect(() => {
         const handleResize = () => {
           
@@ -23,12 +24,15 @@ function Sidebar() {
             setMenuToggle(false);
           };
         };
-    
+        
+        window.addEventListener("load", handleResize);
+
         window.addEventListener('resize', handleResize);
     
         // Clean up the event listener when the component unmounts
         return () => {
           window.removeEventListener('resize', handleResize);
+          window.removeEventListener('load', handleResize);
         };
       }, []);
 
