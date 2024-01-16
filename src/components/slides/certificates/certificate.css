@@ -170,3 +170,35 @@
     margin-top: 10px;
 }
 
+@media screen and ((max-width: 900px) ) {
+    .preview-window {
+        height: 100%;
+        width: 100%;
+    }
+
+    .preview-controller>.prev,.preview-controller>.next
+{
+    display: none;
+}
+
+.certificates-item
+{
+  height: auto;
+}
+.certificate-img {
+    height:auto;
+    overflow: hidden;
+    transition: 1s;
+}
+.certificates-item p{
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.certificates-item {
+    box-sizing: border-box;
+}
+.Certificate-row
+{
+    padding: 0;
+}
+}

@@ -113,3 +113,19 @@ font-size:22px;
   {
     content: '#';
   }
+
+  @media screen and ((max-width: 900px) ) {
+    .projects {
+    padding: 0.5em;
+    }
+    .projects-row
+    {
+      width: 100%;
+      padding: 0;
+    }
+    .project-col {
+      flex: 0 3 100%;
+      width: 100%;
+      max-width: 100%;
+  }
+  }

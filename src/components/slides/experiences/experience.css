@@ -65,15 +65,59 @@ p>ul
 }
 p>ul>li
 {
-    color: rgb(53, 52, 52);
+    color: rgb(20, 4, 4);
     line-height: 15px;
     margin-top: 0.5em;
+    list-style: none;
 
 }
 
 p>ul>li::before
 {
-    content: ' s';
-    list-style: disc;
+    content: ' ';
 }
 
+
+
+@media screen and ((max-width: 900px) ) {
+ 
+    .company
+    {
+        height: 100%;
+        overflow: scroll;
+        padding: 1em 0.5em;
+        align-items: flex-start;
+    }
+
+    
+.role
+{
+    padding: 1em 0.5em;
+    height: auto;
+    width: 100%;
+}
+
+.role>h3 {
+    margin-top: -10px;
+    font-size: 26px;
+    color: var(--sidebar-bg);
+}
+.role>h4 {
+    
+    font-size: 14px;
+    
+}
+
+.role h2 {
+     font-size: 16px;
+}
+
+.project p
+{
+    text-align: justify;
+
+    line-height: 18px;
+}
+
+
+}

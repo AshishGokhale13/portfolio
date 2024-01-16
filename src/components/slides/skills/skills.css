@@ -107,3 +107,58 @@ border-radius:0px 10px 10px 0px;
     height: 100%;
     width: 100%;
 }
+
+@media screen and ((max-width: 900px) ) {
+.skills-container
+{
+    width: 100%;
+}
+
+.skills-menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.skills {
+    padding: 1em 0.5em;
+}
+.skills-menu > button {
+   display: none;
+}
+
+.skills-row {
+    padding: 0.5em;
+    gap:0.7em;
+}
+
+    .skill-item {
+        padding: 0.6em 0.5em;
+        width: 60px;
+        border-radius: 18px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        transition: 0.6s;
+        text-align: center;
+        background-color: white;
+        font-size: 12px;
+        transition: 1s;
+        
+        animation: show 0.5s linear 1s;
+    }
+
+    .skill-Icon, .skill-Icon img {
+        transition: 0.6s;
+        height: 50px;
+        width: 50px;
+    }
+    .skill-Icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .skill-item p{
+        font-size: 11px;
+    }
+}
