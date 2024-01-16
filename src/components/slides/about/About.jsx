@@ -11,7 +11,7 @@ import { RiPagesFill } from "react-icons/ri";
 
         <div className='about-info'>
             <div>
-            <h3 className='about-title'>Er. Ashish Gokhale <small title="from M.S Bidve Engineering college Latur">B.Tech (Computer Eng.) </small></h3>
+            <h3 className='about-title'>Mr. Ashish Gokhale <small title="from M.S Bidve Engineering college Latur">Software Engineer </small></h3>
             <h2 className='sub-title'>
                 <ul>
                 <li>FrontEnd Developer</li>
