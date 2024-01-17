@@ -36,6 +36,13 @@ function Sidebar() {
         };
       }, []);
 
+      useEffect((e) => {
+
+        menuToggle?'':setTimeout(()=>{
+            window.document.getElementById("toggleMenus").classList.add('hideme');
+        },500);
+      },[menuToggle]);
+
     return (
         <div className='sidebar'>
               <div className='sidebar-title'>
@@ -48,7 +55,7 @@ function Sidebar() {
             </div>
                {
                
-                    <div className={menuToggle?'menus  slide-right':'menus slideleft'}>
+                    <div  id="toggleMenus"  className={menuToggle?'menus  slide-right':'menus slideleft'}>
                    
                     <div className='menu-item'>
                         <h3><Link className='link' to="/about"><FaUserNinja/>About</Link></h3>

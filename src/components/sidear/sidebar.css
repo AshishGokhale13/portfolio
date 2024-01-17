@@ -150,6 +150,11 @@
     
 }
 
+.hideme
+{
+    display: none !important;
+}
+
 .menu-item
 {
     height: auto;
