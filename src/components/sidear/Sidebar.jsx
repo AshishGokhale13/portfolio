@@ -47,8 +47,8 @@ function Sidebar() {
                 {menuToggle?<GiCrossMark />:<IoMdMenu />}
             </div>
                {
-                menuToggle&&(
-                    <div className='menus slide-right'>
+               
+                    <div className={menuToggle?'menus  slide-right':'menus slideleft'}>
                    
                     <div className='menu-item'>
                         <h3><Link className='link' to="/about"><FaUserNinja/>About</Link></h3>
@@ -66,7 +66,7 @@ function Sidebar() {
                         <h3><Link className='link' to='/projects'>Projects</Link></h3>
                     </div>
                 </div>
-                )
+                
                }
                 
 
