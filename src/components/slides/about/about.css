@@ -197,3 +197,10 @@
     flex-wrap: wrap;
 }
 }
+
+@media screen and ((max-width: 500px) ) {
+    .about {
+        display: flex;
+        height: 92%;
+    }
+}

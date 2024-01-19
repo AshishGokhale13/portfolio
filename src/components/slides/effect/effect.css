@@ -310,3 +310,11 @@
     height: 100%;
     width: 100%;
 }
+
+@media screen and ((max-width: 900px) ) {
+    .effect
+    {
+        border-radius: 0;
+        height: 94%;
+    }
+}

@@ -114,9 +114,10 @@ font-size:22px;
     content: '#';
   }
 
-  @media screen and ((max-width: 900px) ) {
+  @media screen and ((max-width: 1000px) ) {
     .projects {
     padding: 0.5em;
+    height: 90%;
     }
     .projects-row
     {

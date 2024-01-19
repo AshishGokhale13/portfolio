@@ -108,7 +108,7 @@ border-radius:0px 10px 10px 0px;
     width: 100%;
 }
 
-@media screen and ((max-width: 900px) ) {
+@media screen and ((max-width: 1000px) ) {
 .skills-container
 {
     width: 100%;
@@ -121,6 +121,7 @@ border-radius:0px 10px 10px 0px;
 }
 
 .skills {
+    height: 92%;
     padding: 1em 0.5em;
 }
 .skills-menu > button {

@@ -170,10 +170,13 @@
     margin-top: 10px;
 }
 
-@media screen and ((max-width: 900px) ) {
+@media screen and ((max-width: 1000px) ) {
     .preview-window {
         height: 100%;
         width: 100%;
+    }
+    .Certificates{
+    height: 92%;
     }
 
     .preview-controller>.prev,.preview-controller>.next
@@ -184,6 +187,7 @@
 .certificates-item
 {
   height: auto;
+  width: auto;
 }
 .certificate-img {
     height:auto;
