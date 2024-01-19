@@ -157,6 +157,7 @@
     width: 100%;
     height: auto;
     left: 0;
+    position: sticky;
     justify-content: space-around;
 }
 
