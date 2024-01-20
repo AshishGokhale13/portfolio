@@ -138,14 +138,13 @@
 }
 
 
-@media screen and ((max-width: 500px) ) {
+@media screen and ((max-width: 600px) ) {
  
     .about
     {
     height: 100%;
     flex-direction:column-reverse;  
     overflow: scroll;
-   
     }
 
     .about-logo {
@@ -202,5 +201,32 @@
     .about {
         display: flex;
         height: 92%;
+        overflow: scroll;
+    }
+}
+
+@media screen and ((max-width: 800px) ) {
+    .about {
+        padding: 0em 0;
+        display: flex;
+        height: 90%;
+        overflow: scroll;
+    }
+
+    .about p {
+        font-size: 14px;
+        text-align: justify;
+    }
+    .about-title {
+        font-size: 25px;
+        font-family: 'Bree Serif', serif;
+    }
+    
+    .about-logo {
+        flex: 2 1 54%;
+    }
+
+    .sub-title { 
+        font-size: 20px;
     }
 }

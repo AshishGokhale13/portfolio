@@ -119,5 +119,16 @@ p>ul>li::before
     line-height: 18px;
 }
 
+}
 
+
+@media screen and ((max-width: 800px) ) {
+ 
+    .company
+    {
+        height: 80%;
+        overflow: scroll;
+        padding: 1em 0.5em;
+        align-items: flex-start;
+    }
 }

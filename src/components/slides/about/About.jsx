@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './about.css'
 import profile from '../../../assets/images/images.png'
 import { FiInstagram,FiLinkedin,FiMail} from "react-icons/fi";
 import { MdAddCall } from "react-icons/md";
 import { RiPagesFill } from "react-icons/ri";
  function About() {
+
+  useEffect(()=>{
+
+
+      window.document.getElementById("About").scrollTop=-165;
+  },[]);
+
   return (
     <>
-    <div className='about'>
+    <div className='about' id="About">
 
         <div className='about-info'>
             <div>

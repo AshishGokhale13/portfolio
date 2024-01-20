@@ -206,3 +206,19 @@
     padding: 0;
 }
 }
+
+@media screen and ((max-width: 900px))
+{
+    .Certificates {
+        height: 90%;
+       
+    }
+
+    .Certificate-row {
+        padding: 2em 0;
+    }
+.certificates-item {
+    box-sizing: border-box;
+    flex: 0 1 47%;
+}
+}

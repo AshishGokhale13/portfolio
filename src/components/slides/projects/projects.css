@@ -114,7 +114,7 @@ font-size:22px;
     content: '#';
   }
 
-  @media screen and ((max-width: 1000px) ) {
+  @media screen and ((max-width: 550px) ) {
     .projects {
     padding: 0.5em;
     height: 90%;
@@ -125,8 +125,21 @@ font-size:22px;
       padding: 0;
     }
     .project-col {
-      flex: 0 3 100%;
+      flex: 0 3 100% !important;
       width: 100%;
       max-width: 100%;
   }
   }
+
+  @media screen and ((max-width: 900px) ) {
+    
+    .projects-row {
+      width: 100%;
+      padding-bottom: 3em;
+  }
+  .project-col {
+    flex: 0 3 48%;
+    width: 100%;
+    max-width: 100%;
+  }
+}
