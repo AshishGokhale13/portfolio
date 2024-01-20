@@ -157,7 +157,7 @@
     width: 100%;
     height: auto;
     left: 0;
-    justify-content: space-around;
+   
 }
 
 .slide-right
@@ -182,7 +182,8 @@
     height: auto;
     margin: 0;
     box-sizing: border-box;
-    padding: 1em 0;
+    padding: 1em 1.5rem;
+    flex: 1;
 }
 .mv > svg
 {
