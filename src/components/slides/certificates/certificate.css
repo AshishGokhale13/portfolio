@@ -186,6 +186,7 @@
 
 .certificates-item
 {
+    flex: 0 1 100% !important; 
   height: auto;
   width: auto;
 }
@@ -200,6 +201,7 @@
 }
 .certificates-item {
     box-sizing: border-box;
+    
 }
 .Certificate-row
 {
