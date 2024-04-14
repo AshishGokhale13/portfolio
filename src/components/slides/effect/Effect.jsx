@@ -92,6 +92,7 @@ function Effect() {
 
 
   return (
+    
     <div className='effect'>
       <div className='shapes'>
         {

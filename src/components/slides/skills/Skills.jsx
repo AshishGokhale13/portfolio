@@ -23,6 +23,7 @@ import react from '../../../assets//images/tech/reactjs.png'
 import redux from '../../../assets//images/tech/redux.png'
 import tailwind from '../../../assets//images/tech/tailwind.png'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 
 
@@ -40,14 +41,19 @@ function Skills() {
         return (<>
             {
               skills.map((data,index)=>
-                    <div className='skill-item' key={index}>
+                    <motion.div 
+
+                    initial={{y:'5em',opacity:0}}
+                    animate={{y:0,opacity:1}}
+                    transition={{ delay: index * 0.2 }}
+                    div className='skill-item' key={index}>
                         <div className='skill-Icon'>
                             <img src={data.img} />
                         </div>
                         <div className='Skill_percentage'>
                             <p className='skill-title'>{data.name}</p>
                         </div>
-                    </div>
+                    </motion.div>
               ) 
             }
         </>)

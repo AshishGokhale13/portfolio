@@ -16,7 +16,7 @@
     width: auto;
 }
 
-.skills-row
+.skills-row,.skill-items
 {
     display: flex;
     flex-wrap:wrap;
@@ -71,7 +71,7 @@ border-radius:0px 10px 10px 0px;
     background-color: white;
     font-size: 12px;
     transition: 1s;
-    animation: show 0.5s linear 1s;
+    
 }
 
 @keyframes show {

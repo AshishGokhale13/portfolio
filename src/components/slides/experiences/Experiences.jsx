@@ -1,9 +1,26 @@
 import React from 'react'
 import './experience.css'
+import { motion } from 'framer-motion';
 import techm from '../../../assets/images/TechMahindra.png'
 function Experiences() {
+  const motionVariant = {
+    hidden: {
+      x: '-10em',
+      opacity: 0
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { delay: 0.5, duration: 1.5 }
+    },
+    exit: {
+      x: '-10em',
+      
+    }
+  };
   return (
-    <div className='experience'>
+    <motion.div  variants={motionVariant} initial="hidden" animate="visible" exit="exit" className='experience'>
+
         <div className='company'>
             <div className='role'>
                  <img src={techm}/>
@@ -26,7 +43,7 @@ function Experiences() {
                 
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
